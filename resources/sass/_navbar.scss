@@ -1,0 +1,87 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-light;
+    background: $primary-dark;
+    padding: .7rem;
+
+    a {
+        color: white;
+        font-size: 1.5rem;
+        transition: all .3s;
+        display: inline-block;
+
+        &:hover {
+            color: $primary-color;
+            transform: translateY(-1px);
+        }
+
+        &:focus {
+            color: $primary-color;
+            transform: translateY(-1px);
+        }
+    }
+
+    &__logo {
+        flex-basis: 30%;
+        @media(max-width: 900px) {
+            flex-basis: 80%;
+        }
+
+        a {
+            font-family: "Permanent Marker", cursive;
+            font-size: 3rem;
+        }
+    }
+
+    &__menu {
+        flex-basis: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media(max-width: 900px) {
+            display: none;
+
+            &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20%;
+
+                a {
+                    font-size: 3rem;
+                }
+
+                &:hover {
+                    background-color: cadetblue;
+                }
+            }
+        }
+    }
+
+    &__close {
+        display: none;
+        cursor: pointer;
+        z-index:2;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.mobile {
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    position: fixed;
+    inset: 0 0 0 0;
+    background: $primary-dark;
+    backdrop-filter: blur(2rem);
+}
+
+
+
