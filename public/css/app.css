@@ -14,6 +14,7 @@ body {
   font-family: "Nunito", sans-serif;
   background: #F4FAFF;
   color: black;
+  min-height: 100vh;
 }
 
 a,
@@ -28,6 +29,7 @@ ul {
 }
 
 .main-header {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +68,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 @media (max-width: 900px) {
   .main-header__menu {
@@ -76,6 +79,8 @@ ul {
     justify-content: center;
     align-items: center;
     height: 20%;
+    position: relative;
+    z-index: 1000;
   }
   .main-header__menu__item a {
     font-size: 3rem;
@@ -150,4 +155,68 @@ ul {
 .fa-bars {
   color: transparent;
   background: none;
+}
+
+.fa-custom {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  z-index: 1;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  border-right: 2px solid #150421;
+  padding-right: 1rem;
+  color: #150421;
+}
+
+.register, .login {
+  z-index: -1;
+  margin: 6rem auto;
+  max-width: 600px;
+  width: 95%;
+  padding: 4rem;
+  background-color: white;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+.register button, .login button {
+  margin-top: 2.6rem;
+}
+.register__label, .login__label {
+  display: inline-block;
+  margin: 1rem 0 0.3rem 0;
+  visibility: hidden;
+}
+.register__login, .register__email, .register__password, .login__login, .login__email, .login__password {
+  width: 100%;
+  display: block;
+  padding: 1rem 1rem 1rem 5rem;
+  position: relative;
+}
+.register__login:focus, .register__login:active, .register__email:focus, .register__email:active, .register__password:focus, .register__password:active, .login__login:focus, .login__login:active, .login__email:focus, .login__email:active, .login__password:focus, .login__password:active {
+  border: 2px solid #8bafb4;
+  outline: none;
+}
+.register__info, .login__info {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.register__group, .login__group {
+  position: relative;
+}
+.register__submit, .login__submit {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: 2px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.register__submit:hover, .login__submit:hover {
+  background: #fbff71;
+  transform: scale(1.02);
 }

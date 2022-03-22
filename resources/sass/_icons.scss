@@ -7,3 +7,16 @@
     color: transparent;
     background: none;
 }
+
+.fa-custom {
+    position: absolute;
+    left: 3rem;
+    top: 50%;
+    z-index: 1;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    border-right: 2px solid $primary-dark;
+    padding-right: 1rem;
+    color: $primary-dark;
+
+}

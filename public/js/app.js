@@ -2167,13 +2167,20 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var mainMenu = document.querySelector(".main-header__menu");
 var hamburgerMenu = document.querySelector(".main-header__burger");
 var closeMenuButton = document.querySelector(".main-header__close");
+var icons = document.querySelectorAll(".fa-custom");
 hamburgerMenu.addEventListener("click", function () {
   mainMenu.classList.add("mobile");
   closeMenuButton.style.display = "block";
+  icons.forEach(function (icon) {
+    return icon.style.display = "none";
+  });
 });
 closeMenuButton.addEventListener("click", function (e) {
   mainMenu.classList.remove("mobile");
   closeMenuButton.style.display = "none";
+  icons.forEach(function (icon) {
+    return icon.style.display = "block";
+  });
 });
 
 /***/ }),
