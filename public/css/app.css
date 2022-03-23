@@ -28,6 +28,16 @@ ul {
   list-style: none;
 }
 
+.is-invalid {
+  border: 1px solid #BB254B;
+}
+
+.input-error {
+  margin-top: 2px;
+  position: absolute;
+  color: #BB254B;
+}
+
 .main-header {
   height: 60px;
   display: flex;
@@ -78,7 +88,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 25%;
     position: relative;
     z-index: 1000;
   }
@@ -87,6 +97,11 @@ ul {
   }
   .main-header__menu__item:hover {
     background-color: cadetblue;
+  }
+}
+@media (max-width: 900px) and (max-width: 900px) {
+  .main-header__menu__username {
+    display: none;
   }
 }
 .main-header__close {
@@ -110,6 +125,15 @@ ul {
   background: #150421;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
+}
+
+#logout-button {
+  background-color: #BB254B;
+  padding: 0.5rem;
+  border: none;
+  margin-top: 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .main-header__burger {
@@ -192,9 +216,6 @@ ul {
   display: block;
   padding: 1rem 1rem 1rem 5rem;
   position: relative;
-}
-.register__login:focus, .register__login:active, .register__email:focus, .register__email:active, .register__password:focus, .register__password:active, .login__login:focus, .login__login:active, .login__email:focus, .login__email:active, .login__password:focus, .login__password:active {
-  border: 2px solid #8bafb4;
   outline: none;
 }
 .register__info, .login__info {

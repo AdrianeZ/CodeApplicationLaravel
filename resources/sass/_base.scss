@@ -32,3 +32,15 @@ ul
 {
     list-style: none;
 }
+
+.is-invalid
+{
+    border: 1px solid $info-color;
+}
+
+.input-error
+{
+    margin-top: 2px;
+    position: absolute;
+    color:$info-color;
+}

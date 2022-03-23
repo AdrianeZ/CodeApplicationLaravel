@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.register');
+Route::redirect("/", "/register");
+
+Route::get("codes/view", function ()
+{
+    return response()->view("codes.display");
 });
+
+
