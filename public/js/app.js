@@ -2171,7 +2171,7 @@ var icons = document.querySelectorAll(".fa-custom");
 hamburgerMenu.addEventListener("click", function () {
   mainMenu.classList.add("mobile");
   closeMenuButton.style.display = "block";
-  icons.forEach(function (icon) {
+  if (icons) icons.forEach(function (icon) {
     return icon.style.display = "none";
   });
 });

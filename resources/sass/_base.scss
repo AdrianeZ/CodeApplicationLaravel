@@ -44,3 +44,26 @@ ul
     position: absolute;
     color:$info-color;
 }
+
+.error
+{
+    color:$info-color;
+}
+
+.alert--wrong
+{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $info-color;
+    color:$primary-light;
+}
+
+.alert-success
+{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $success-color;
+    color:$primary-light;
+}

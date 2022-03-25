@@ -26,12 +26,12 @@
         <header class="main-header">
 
             <div class="main-header__logo">
-                <a href="#">Code Generator</a>
+                <a href="{{route('your_codes')}}">Code Generator</a>
             </div>
             <ul class="main-header__menu">
-                <li class="main-header__menu__item"><a href="#">View</a></li>
-                <li class="main-header__menu__item"><a href="#">Create</a></li>
-                <li class="main-header__menu__item"><a href="#">Remove</a></li>
+                <li class="main-header__menu__item"><a href="{{route('your_codes')}}">View</a></li>
+                <li class="main-header__menu__item"><a href="{{route('render_create_form')}}">Create</a></li>
+                <li class="main-header__menu__item"><a href="{{route('render_delete_form')}}">Remove</a></li>
 
                 @guest
                     <li class="main-header__menu__item"><a href="{{route("register")}}">

@@ -38,6 +38,26 @@ ul {
   color: #BB254B;
 }
 
+.error {
+  color: #BB254B;
+}
+
+.alert--wrong {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #BB254B;
+  color: #F4FAFF;
+}
+
+.alert-success {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #04A777;
+  color: #F4FAFF;
+}
+
 .main-header {
   height: 60px;
   display: flex;
@@ -129,6 +149,7 @@ ul {
 
 #logout-button {
   background-color: #BB254B;
+  color: #F4FAFF;
   padding: 0.5rem;
   border: none;
   margin-top: 2px;
@@ -238,6 +259,47 @@ ul {
   cursor: pointer;
 }
 .register__submit:hover, .login__submit:hover {
+  background: #fbff71;
+  transform: scale(1.02);
+}
+
+.generate-code, .remove-code {
+  z-index: -1;
+  margin: 6rem auto;
+  max-width: 300px;
+  width: 95%;
+  padding: 4rem;
+  background-color: white;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+.generate-code input[type=number], .generate-code textarea, .remove-code input[type=number], .remove-code textarea {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  outline: none;
+  resize: none;
+}
+.generate-code textarea, .remove-code textarea {
+  margin: 0;
+}
+.generate-code p, .remove-code p {
+  margin: 0.5rem;
+}
+.generate-code input[type=submit], .remove-code input[type=submit] {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: 2px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.generate-code input[type=submit]:hover, .remove-code input[type=submit]:hover {
   background: #fbff71;
   transform: scale(1.02);
 }
