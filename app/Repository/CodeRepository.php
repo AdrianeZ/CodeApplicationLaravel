@@ -7,16 +7,19 @@ namespace App\Repository;
 
 use App\Models\Code;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class CodeRepository implements CodeRepositoryInterface
 {
     public function insert(array $codes): void
     {
+        $userId = Auth::id();
         $codesToInsert = [];
         for ($i = 0; $i < count($codes); $i++) {
             $codesToInsert[] = [
                 "code" => $codes[$i],
-                "created_at" => Carbon::now()
+                "created_at" => Carbon::now(),
+                "user_id" => $userId
             ];
         }
         Code::Insert($codesToInsert);
