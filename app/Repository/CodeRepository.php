@@ -8,6 +8,7 @@ namespace App\Repository;
 use App\Models\Code;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class CodeRepository implements CodeRepositoryInterface
 {
@@ -45,5 +46,12 @@ class CodeRepository implements CodeRepositoryInterface
     private function remove(array $codes): void
     {
         Code::whereIn("code", $codes)->delete();
+    }
+
+
+
+    public function getAll(): LengthAwarePaginator
+    {
+       return Code::with("user")->paginate(10);
     }
 }

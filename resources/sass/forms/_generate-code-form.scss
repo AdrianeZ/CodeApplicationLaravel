@@ -1,4 +1,4 @@
-.generate-code, .remove-code {
+.generate-code, .remove-code{
     z-index: -1;
     margin: 6rem auto;
     max-width: 300px;
@@ -8,6 +8,7 @@
     font-size: 1.3rem;
     //box-shadow: $custom-box-shadow;
     border-radius: 20px;
+
 
     input[type=number], textarea {
         width: 100%;
@@ -45,4 +46,65 @@
         }
     }
 
+}
+
+.listing
+{
+    z-index: -1;
+    margin: 6rem auto;
+    max-width: 1200px;
+    width: 95%;
+    padding: 4rem;
+    background-color: white;
+    font-size: 1.3rem;
+    //box-shadow: $custom-box-shadow;
+    border-radius: 20px;
+
+    svg
+    {
+        display: none;
+    }
+
+    nav
+    {
+        padding: 1rem;
+        font-size: 2rem;
+        font-family: "Permanent Marker", cursive;
+    }
+
+    table
+    {
+        border-collapse: collapse;
+        min-width: 400px;
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 5px 5px 0 0;
+        margin:1rem;
+        overflow: hidden;
+
+
+        thead tr
+        {
+            background-color:$primary-color2;
+            font-weight: bold;
+            color:black;
+            text-align: left;
+            padding: 5px;
+        }
+
+        th,td
+        {
+            padding: 1rem 1.3rem;
+        }
+
+        tbody tr
+        {
+            border-bottom: 1px solid $primary-light;
+        }
+
+        tbody tr:nth-child(even)
+        {
+            background-color: #f3f6f8;
+        }
+    }
 }

@@ -29,7 +29,8 @@ class CodesController extends Controller
 
     public function list(): View
     {
-        return view("codes.list");
+        $codes = $this->codeRepository->getAll();
+        return view("codes.list", ["codes" => $codes]);
     }
 
     public function create(Request $request): RedirectResponse
