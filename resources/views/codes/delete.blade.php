@@ -4,7 +4,7 @@
 
     @if(session("invalidcodes"))
         <div class="alert--wrong">
-            Nie znaleziono następujących kodów w bazie danych:
+            These codes was not found in the database:
             @foreach(session("invalidcodes") as $invalidCode) {{$invalidCode, }} @endforeach
         </div>
 
@@ -23,7 +23,7 @@
             @error('codes')
             <small class="error">{{$message}}</small>
             @enderror
-            <input type="submit" value="Potwierdz">
+            <input type="submit" value="Submit">
 
         </form>
     </section>

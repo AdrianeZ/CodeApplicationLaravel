@@ -6,7 +6,7 @@
         <form action="{{route('add_codes')}}" method="POST">
             @csrf
             <input name="quantity" id="quantity" type="number" min="1" max="10" required>
-            <input type="submit" value="Potwierdz">
+            <input type="submit" value="Submit">
             @error('quantity')
             <small class="input-error">{{$message}}</small>
             @enderror

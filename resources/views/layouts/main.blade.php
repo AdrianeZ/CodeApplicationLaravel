@@ -41,10 +41,10 @@
         @else
 
             <li class="main-header__menu__item">
-                <span class="main-header__menu__username">Witaj {{Auth::user()->name}}</span>
+                <span class="main-header__menu__username">Hi {{Auth::user()->name}}</span>
                 <form action="{{route("logout")}}" method="POST">
                     @csrf
-                    <button type="submit" id="logout-button">Wyloguj się</button>
+                    <button type="submit" id="logout-button">Log Out</button>
                 </form>
             </li>
         @endguest
