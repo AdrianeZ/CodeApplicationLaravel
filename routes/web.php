@@ -18,9 +18,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-//Route::get("/", )
-
-
 Route::get("/", HomeController::class);
 
 Route::group(["middleware" => "auth", "prefix" => "codes"], function () {
