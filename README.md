@@ -9,7 +9,7 @@ The goal of the project was to practise Laravel.
 
 
 Application provides simple authentication and provides
-generating, removing and listing 10-digit code binded to partiular user.
+generating, removing and listing 10-digit code binded to particular user.
 
 ## How to use locally?
 
