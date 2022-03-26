@@ -246,7 +246,7 @@ ul {
   resize: none;
 }
 .generate-code textarea, .remove-code textarea {
-  margin: 0;
+  margin: 1rem 0;
 }
 .generate-code p, .remove-code p {
   margin: 0.5rem;
