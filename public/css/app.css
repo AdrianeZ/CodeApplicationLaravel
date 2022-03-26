@@ -15,6 +15,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -55,6 +60,7 @@ ul {
 }
 .main-header__logo {
   flex-basis: 30%;
+  margin-left: 1rem;
 }
 @media (max-width: 900px) {
   .main-header__logo {
@@ -316,12 +322,17 @@ ul {
 }
 .listing table {
   border-collapse: collapse;
-  min-width: 400px;
+  min-width: 300px;
   width: 100%;
   font-size: 1.5rem;
   border-radius: 5px 5px 0 0;
   margin: 1rem;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .listing table {
+    font-size: 0.8rem;
+  }
 }
 .listing table thead tr {
   background-color: #95f4cc;

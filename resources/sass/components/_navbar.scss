@@ -20,7 +20,8 @@
 
     &__logo {
         flex-basis: 30%;
-        @media(max-width: 900px) {
+        margin-left: 1rem;
+        @media(max-width: $breakpoint) {
             flex-basis: 80%;
         }
 
