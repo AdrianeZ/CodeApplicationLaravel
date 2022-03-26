@@ -8,7 +8,7 @@
             <label for="login" class="register__label"> Podaj Swoje Imię/login</label>
             <div class="register__group">
                 <i class="fas fa-user fa-custom"></i>
-                <input placeholder="Login" type="text" name="name" id="login" value="{{old("name")}}"
+                <input placeholder="Name" type="text" name="name" id="login" value="{{old("name")}}"
                        class="register__login @error('name') is-invalid @enderror" required>
                 @error('name') <small class="input-error">{{$message}}</small> @enderror
             </div>
