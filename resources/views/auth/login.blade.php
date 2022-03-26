@@ -8,7 +8,7 @@
             <label for="login" class="login__label"> Podaj Email</label>
             <div class="login__group">
                 <i class="fas fa-at fa-custom"></i>
-                <input placeholder="email" type="email" id="email" value="{{old("email")}}"
+                <input placeholder="Email" type="email" id="email" value="{{old("email")}}"
                        name="email" class="login__login" required>
             </div>
 
