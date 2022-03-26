@@ -12,7 +12,7 @@
         display: inline-block;
 
         &:hover,
-        &:focus{
+        &:focus {
             color: $primary-color;
             transform: translateY(-1px);
         }
@@ -52,8 +52,7 @@
                 }
             }
 
-            &__username
-            {
+            &__username {
                 @media (max-width: $breakpoint) {
                     display: none;
                 }
@@ -64,7 +63,7 @@
     &__close {
         display: none;
         cursor: pointer;
-        z-index:2;
+        z-index: 2;
         position: fixed;
         top: 20px;
         right: 20px;
@@ -82,10 +81,9 @@
     backdrop-filter: blur(2rem);
 }
 
-#logout-button
-{
+#logout-button {
     background-color: $info-color;
-    color:$primary-light;
+    color: $primary-light;
     padding: .5rem;
     border: none;
     margin-top: 2px;

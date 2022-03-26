@@ -3,8 +3,9 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-class CodeGeneratorImpl implements CodeGenerator
+class CodeServiceImpl implements CodeService
 {
+    // Generate random n quantity 10-digit number
     public function generate(int $quantity): array
     {
         $codes = [];
@@ -21,6 +22,7 @@ class CodeGeneratorImpl implements CodeGenerator
         return $codes;
     }
 
+    // parse input using regular expressions
     public function parse(string $input): array
     {
         $codes = preg_split("/(,|,\n|,\r\n|\n|\r\n)/", $input);

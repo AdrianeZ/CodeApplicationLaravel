@@ -6,6 +6,11 @@
             {{session("success")}}
         </div>
     @endif
+    @if(session("error"))
+        <div class="alert--wrong">
+            {{session("error")}}
+        </div>
+    @endif
     <section class="listing">
         @if($codes->isNotEmpty())
             <table class>

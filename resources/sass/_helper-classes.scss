@@ -1,34 +1,29 @@
-.is-invalid
-{
+.is-invalid {
     border: 1px solid $info-color;
 }
 
-.input-error
-{
+.input-error {
     margin-top: 2px;
     position: absolute;
-    color:$info-color;
+    color: $info-color;
 }
 
-.error
-{
-    color:$info-color;
+.error {
+    color: $info-color;
 }
 
-.alert--wrong
-{
+.alert--wrong {
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
     background-color: $info-color;
-    color:$primary-light;
+    color: $primary-light;
 }
 
-.alert--success
-{
+.alert--success {
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
     background-color: $success-color;
-    color:$primary-light;
+    color: $primary-light;
 }

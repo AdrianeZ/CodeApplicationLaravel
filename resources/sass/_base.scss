@@ -1,35 +1,30 @@
 *,
 *::before,
-*::after
-{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html
-{
+html {
     font-size: 62.5%;
 }
 
-body
-{
+body {
     font-family: 'Nunito', sans-serif;
     background: $primary-light;
-    color:black;
+    color: black;
     min-height: 100vh;
 }
 
 a,
 a:link,
-a:visited
-{
-    color:black;
+a:visited {
+    color: black;
     text-decoration: none;
 }
 
-ul
-{
+ul {
     list-style: none;
 }
 

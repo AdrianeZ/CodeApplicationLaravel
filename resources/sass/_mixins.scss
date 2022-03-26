@@ -1,12 +1,10 @@
-@mixin flex($justify, $align)
-{
+@mixin flex($justify, $align) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin content($max-width)
-{
+@mixin content($max-width) {
     z-index: -1;
     margin: 6rem auto;
     max-width: $max-width;
@@ -15,11 +13,10 @@
     background-color: white;
     font-size: 1.3rem;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-%input-style
-{
+%input-style {
     width: 100%;
     display: block;
     padding: 1rem;

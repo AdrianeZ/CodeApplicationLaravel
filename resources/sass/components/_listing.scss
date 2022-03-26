@@ -1,51 +1,43 @@
-.listing
-{
+.listing {
     @include content(1200px);
 
-    svg
-    {
+    svg {
         display: none;
     }
 
-    nav
-    {
+    nav {
         padding: 1rem;
         font-size: 2rem;
         font-family: "Permanent Marker", cursive;
     }
 
-    table
-    {
+    table {
         border-collapse: collapse;
         min-width: 400px;
         width: 100%;
         font-size: 1.5rem;
         border-radius: 5px 5px 0 0;
-        margin:1rem;
+        margin: 1rem;
         overflow: hidden;
 
 
-        thead tr
-        {
-            background-color:$primary-color2;
+        thead tr {
+            background-color: $primary-color2;
             font-weight: bold;
-            color:black;
+            color: black;
             text-align: left;
             padding: 5px;
         }
 
-        th,td
-        {
+        th, td {
             padding: 1rem 1.3rem;
         }
 
-        tbody tr
-        {
+        tbody tr {
             border-bottom: 1px solid $primary-light;
         }
 
-        tbody tr:nth-child(even)
-        {
+        tbody tr:nth-child(even) {
             background-color: #f3f6f8;
         }
     }

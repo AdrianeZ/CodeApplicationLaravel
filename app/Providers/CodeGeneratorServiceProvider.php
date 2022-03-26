@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Services\CodeGenerator;
-use App\Services\CodeGeneratorImpl;
+use App\Services\CodeService;
+use App\Services\CodeServiceImpl;
 use Illuminate\Support\ServiceProvider;
 
 class CodeGeneratorServiceProvider extends ServiceProvider
@@ -15,7 +15,7 @@ class CodeGeneratorServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(CodeGenerator::class, CodeGeneratorImpl::class);
+        $this->app->bind(CodeService::class, CodeServiceImpl::class);
     }
 
     /**

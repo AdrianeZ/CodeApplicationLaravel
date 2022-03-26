@@ -2,8 +2,7 @@
 
 namespace App\Providers;
 
-use App\Repository\CodeRepository;
-use App\Repository\CodeRepositoryInterface;
+use App\Repository\CodeRepositoryImpl;
 use Illuminate\Support\ServiceProvider;
 
 class CodeRepositoryServiceProvider extends ServiceProvider
@@ -15,7 +14,7 @@ class CodeRepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(CodeRepositoryInterface::class, CodeRepository::class);
+        $this->app->singleton(CodeRepositoryImpl::class, CodeRepositoryImpl::class);
     }
 
     /**
