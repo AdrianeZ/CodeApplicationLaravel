@@ -1,0 +1,39 @@
+.generate-code, .remove-code{
+    @include content(300px);
+
+
+    input[type=number], textarea {
+        @extend %input-style;
+        margin: 2rem 0;
+        outline: none;
+        resize: none;
+    }
+
+    textarea {
+        margin:0;
+    }
+
+    p
+    {
+        margin: .5rem;
+    }
+
+    input[type=submit] {
+        @extend %input-style;
+        border: none;
+        background: transparent;
+        outline: 2px solid black;
+        border-radius: 5px;
+        transition: all .5s;
+        cursor: pointer;
+        margin-top: 1rem;
+
+        &:hover {
+            background: $primary-color;
+            transform: scale(1.02);
+        }
+    }
+
+}
+
+

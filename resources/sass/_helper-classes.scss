@@ -1,0 +1,34 @@
+.is-invalid
+{
+    border: 1px solid $info-color;
+}
+
+.input-error
+{
+    margin-top: 2px;
+    position: absolute;
+    color:$info-color;
+}
+
+.error
+{
+    color:$info-color;
+}
+
+.alert--wrong
+{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $info-color;
+    color:$primary-light;
+}
+
+.alert--success
+{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $success-color;
+    color:$primary-light;
+}

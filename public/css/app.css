@@ -1,3 +1,9 @@
+.generate-code input[type=submit], .remove-code input[type=submit], .generate-code input[type=number], .generate-code textarea, .remove-code input[type=number], .remove-code textarea, .register__submit, .login__submit {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+}
+
 *,
 *::before,
 *::after {
@@ -28,41 +34,11 @@ ul {
   list-style: none;
 }
 
-.is-invalid {
-  border: 1px solid #BB254B;
-}
-
-.input-error {
-  margin-top: 2px;
-  position: absolute;
-  color: #BB254B;
-}
-
-.error {
-  color: #BB254B;
-}
-
-.alert--wrong {
-  text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: #BB254B;
-  color: #F4FAFF;
-}
-
-.alert--success {
-  text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: #04A777;
-  color: #F4FAFF;
-}
-
 .main-header {
-  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   color: #F4FAFF;
   background: #150421;
   padding: 0.7rem;
@@ -73,11 +49,7 @@ ul {
   transition: all 0.3s;
   display: inline-block;
 }
-.main-header a:hover {
-  color: #fbff71;
-  transform: translateY(-1px);
-}
-.main-header a:focus {
+.main-header a:hover, .main-header a:focus {
   color: #fbff71;
   transform: translateY(-1px);
 }
@@ -94,10 +66,10 @@ ul {
   font-size: 3rem;
 }
 .main-header__menu {
-  flex-basis: 70%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-basis: 70%;
   z-index: 2;
 }
 @media (max-width: 900px) {
@@ -135,11 +107,11 @@ ul {
 
 .mobile {
   display: flex;
+  justify-content: space-around;
+  align-items: stretch;
   z-index: 1;
   text-align: center;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: space-around;
   position: fixed;
   inset: 0 0 0 0;
   background: #150421;
@@ -171,17 +143,13 @@ ul {
     display: flex;
   }
 }
-.main-header__burger__line {
+.main-header__burger .main-header__burger__line::before, .main-header__burger .main-header__burger__line::after, .main-header__burger .main-header__burger__line {
   background: white;
   border-radius: 5px;
   height: 3px;
   width: 100%;
 }
 .main-header__burger__line::before, .main-header__burger__line::after {
-  background: white;
-  border-radius: 5px;
-  height: 3px;
-  width: 100%;
   content: "";
   position: absolute;
 }
@@ -223,6 +191,7 @@ ul {
   background-color: white;
   font-size: 1.3rem;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .register button, .login button {
   margin-top: 2.6rem;
@@ -248,12 +217,9 @@ ul {
   position: relative;
 }
 .register__submit, .login__submit {
-  display: block;
-  width: 100%;
   border: none;
   background: transparent;
   outline: 2px solid black;
-  padding: 1rem;
   border-radius: 5px;
   transition: all 0.5s;
   cursor: pointer;
@@ -272,11 +238,9 @@ ul {
   background-color: white;
   font-size: 1.3rem;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .generate-code input[type=number], .generate-code textarea, .remove-code input[type=number], .remove-code textarea {
-  width: 100%;
-  display: block;
-  padding: 1rem;
   margin: 2rem 0;
   outline: none;
   resize: none;
@@ -288,12 +252,9 @@ ul {
   margin: 0.5rem;
 }
 .generate-code input[type=submit], .remove-code input[type=submit] {
-  display: block;
-  width: 100%;
   border: none;
   background: transparent;
   outline: 2px solid black;
-  padding: 1rem;
   border-radius: 5px;
   transition: all 0.5s;
   cursor: pointer;
@@ -302,6 +263,36 @@ ul {
 .generate-code input[type=submit]:hover, .remove-code input[type=submit]:hover {
   background: #fbff71;
   transform: scale(1.02);
+}
+
+.is-invalid {
+  border: 1px solid #BB254B;
+}
+
+.input-error {
+  margin-top: 2px;
+  position: absolute;
+  color: #BB254B;
+}
+
+.error {
+  color: #BB254B;
+}
+
+.alert--wrong {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #BB254B;
+  color: #F4FAFF;
+}
+
+.alert--success {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #04A777;
+  color: #F4FAFF;
 }
 
 .listing {
@@ -313,6 +304,7 @@ ul {
   background-color: white;
   font-size: 1.3rem;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .listing svg {
   display: none;
